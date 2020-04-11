@@ -7,18 +7,24 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "generate": "node ./server/generate.js > ./server/database.json",
+    "server": "json-server --watch ./server/database.json"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.6",
+    "@angular/cdk": "^9.2.0",
     "@angular/common": "~9.0.6",
     "@angular/compiler": "~9.0.6",
     "@angular/core": "~9.0.6",
     "@angular/forms": "~9.0.6",
+    "@angular/material": "^9.2.0",
     "@angular/platform-browser": "~9.0.6",
     "@angular/platform-browser-dynamic": "~9.0.6",
     "@angular/router": "~9.0.6",
+    "faker": "^4.1.0",
+    "json-server": "^0.16.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
